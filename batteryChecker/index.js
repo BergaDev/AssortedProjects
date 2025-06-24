@@ -33,7 +33,7 @@ rl.question('Start checking (y/n): ', (answer) => {
           status = false;
           saveTimes("Minutes run before loss: " + iteration + "Time Up: " + new Date().toLocaleString('en-AU', { timeZone: 'Australia/Sydney' }));
         }
-      }, 1000);
+      }, 60000);
     });
   } else {
     console.log('Server not started.');
