@@ -32,7 +32,6 @@ rl.question('Start checking (y/n): ', (answer) => {
         if (result.alive == false) {
           status = false;
           saveTimes("Minutes run before loss: " + iteration + "Time Down: " + new Date().toLocaleString('en-AU', { timeZone: 'Australia/Sydney' }));
-          process.exit(0);
         }
       }, 60000);
     });
